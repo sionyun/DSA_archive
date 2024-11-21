@@ -11,7 +11,7 @@ Use codes below to call the algorithm
     # txt_file = open(sys.argv[1], "r")
     # pat_file = open(sys.argv[2], "r")
 
-    Wildcard(sample_txt.read(), pat_file.read())
+    # Wildcard(sample_txt.read(), pat_file.read())
 """
 
 def z_algo(txt: str) -> [int]:
@@ -232,14 +232,17 @@ class Wildcard:
 
     def output(self):
         """
-        Generates the output file.
+        Prints the output.
 
         time complexity:
             O(n - m), n is the length of txt and m is the length of pat.
         """
         m = len(self.pat)
-        with open("output_q2.txt", "w+") as f:
-            if not self.is_no_hit:
-                for i in range(len(self.prevZ) - m + 1):
-                    if self.prevZ[i] == m:
-                        f.write("%d\n" % (i + 1))
+        if not self.is_no_hit:
+            for i in range(len(self.prevZ) - m + 1):
+                if self.prevZ[i] == m:
+                    print("%d\n" % (i + 1))
+
+
+if __name__ == '__main__':
+    Wildcard('sampletext!', 'sample')
