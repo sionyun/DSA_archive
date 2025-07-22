@@ -1,5 +1,4 @@
-__author__ = "Yun Sion 33413592"
-# Github = https://github.com/Sion-Yun/FIT3155_A3
+__author__ = "sion"
 
 import sys
 from random import randint
