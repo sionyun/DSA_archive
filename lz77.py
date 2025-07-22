@@ -1,5 +1,4 @@
-__author__ = "Yun Sion 33413592"
-# Github = https://github.com/Sion-Yun/FIT3155_A2
+__author__ = "sion"
 
 import heapq
 from collections import Counter
